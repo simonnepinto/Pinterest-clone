@@ -146,3 +146,5 @@ const SearchBarWrapper = styled.div`
     outline: none;
   }
 `;
+
+const IconsWrapper = styled.div``;
