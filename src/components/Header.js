@@ -78,6 +78,7 @@ const HomeButtons = styled.div`
   justify-content: center;
   border-radius: 24px;
   cursor: pointer;
+  margin: 5px;
 `;
 
 const HomePageButton = styled(HomeButtons)`
@@ -106,6 +107,7 @@ const FollowingButton = styled(HomeButtons)`
 
 const SearchWrapper = styled.div`
   flex: 1;
+  margin-right: 17px;
 `;
 
 const SearchBarWrapper = styled.div`
