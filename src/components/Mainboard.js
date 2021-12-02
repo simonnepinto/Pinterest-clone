@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import Pin from "./Pin";
 
 function MainBoard() {
   return (
     <Wrapper>
-      <Container></Container>
+      <Container>
+        <Pin />
+      </Container>
     </Wrapper>
   );
 }
