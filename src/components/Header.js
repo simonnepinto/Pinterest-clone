@@ -99,4 +99,33 @@ const SearchBarWrapper = styled.div`
   border-radius: 50px;
   border: none;
   padding-left: 10px;
+
+  form {
+    display: flex;
+    flex: 1;
+  }
+
+  form > input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin-left: 5px;
+    font-size: 16px;
+  }
+
+  form > button {
+    display: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input:active {
+    outline: none;
+  }
+
+  input:hover {
+    outline: none;
+  }
 `;
