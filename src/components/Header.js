@@ -13,6 +13,7 @@ function Header(props) {
 
   const onSearchSubmit = (e) => {
     e.preventDefault();
+    props.onSubmit(input);
   };
 
   return (
