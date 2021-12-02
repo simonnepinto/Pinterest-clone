@@ -8,12 +8,11 @@ import FaceIcon from "@mui/icons-material/Face";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styled from "styled-components";
 
-function Header() {
+function Header(props) {
   const [input, setInput] = useState("");
 
   const onSearchSubmit = (e) => {
     e.preventDefault();
-    console.log("This is the input: ", input);
   };
 
   return (
