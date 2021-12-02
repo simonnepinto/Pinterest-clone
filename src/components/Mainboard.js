@@ -30,5 +30,8 @@ const Wrapper = styled.div`
 const Container = styled.div`
   display: flex;
   background-color: white;
-  width: 80%;
+  column-count: 5;
+  column-gap: 5px;
+  margin: 0 auto;
+  height: 100%;
 `;
