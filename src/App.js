@@ -17,6 +17,21 @@ function App() {
     let promises = [];
     let pinData = [];
     let pins = ["dogs", "cars", "tokyo", "doodles"]
+
+    pins.forEach((pinTerm) => {
+      promises.push(
+        getImages(pinTerm).then((res) => {
+          let results = res.data.results;
+          pinData = pinData.concat(results);
+          pinData.sort(function(a,b) {
+            return 0.5 - Math.random();
+          })
+        })
+      )
+    })
+    Promise.all(promises).then(() => {
+      setNewPins(pinData)
+    })
   }
 
   useEffect(() => {
