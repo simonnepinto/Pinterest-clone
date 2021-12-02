@@ -1,12 +1,15 @@
 import React from "react";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import IconButton from "@mui/material/IconButton";
 import styled from "styled-components";
 
 function Header() {
   return (
     <Wrapper>
       <LogoWrapper>
-        <PinterestIcon />
+        <IconButton>
+          <PinterestIcon />
+        </IconButton>
       </LogoWrapper>
       {/* <HomePageButton></HomePageButton>
       <FollowingButton></FollowingButton>
