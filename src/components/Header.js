@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
@@ -35,7 +35,7 @@ function Header() {
               type="text"
               onChange={(e) => setInput(e.target.value)}
             />
-            <button type="submit"></button>
+            <button type="submit" onClick=""></button>
           </form>
         </SearchBarWrapper>
       </SearchWrapper>
