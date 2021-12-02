@@ -1,14 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-function Pin() {
+function Pin(props) {
+  let { urls } = props;
   return (
     <Wrapper>
       <Container>
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1638435055339-f94d05e4824f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
-        />
+        <img alt="" src={urls.regular} />
       </Container>
     </Wrapper>
   );
