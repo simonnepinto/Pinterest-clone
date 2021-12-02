@@ -1,6 +1,7 @@
 import React from "react";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
 import styled from "styled-components";
 
 function Header() {
@@ -17,10 +18,18 @@ function Header() {
       <FollowingButton>
         <a href="/">Following</a>
       </FollowingButton>
-      {/* <SearchWrapper>
-        <SearchBarWrapper></SearchBarWrapper>
+      <SearchWrapper>
+        <SearchBarWrapper>
+          <IconButton>
+            <SearchIcon />
+          </IconButton>
+          <form>
+            <input type="text" />
+            <button type="submit"></button>
+          </form>
+        </SearchBarWrapper>
       </SearchWrapper>
-      <IconsWrapper></IconsWrapper> */}
+      {/* <IconsWrapper></IconsWrapper> */}
     </Wrapper>
   );
 }
@@ -76,4 +85,18 @@ const FollowingButton = styled(HomeButtons)`
   :hover {
     background-color: #e1e1e1;
   }
+`;
+
+const SearchWrapper = styled.div`
+  flex: 1;
+`;
+
+const SearchBarWrapper = styled.div`
+  background-color: #efefef;
+  display: flex;
+  height: 48px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding-left: 10px;
 `;
