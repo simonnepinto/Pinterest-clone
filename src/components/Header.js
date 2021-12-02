@@ -44,7 +44,7 @@ const LogoWrapper = styled.div`
   }
 `;
 
-const HomePageButton = styled.div`
+const HomeButtons = styled.div`
   display: flex;
   align-items: center;
   height: 48px;
@@ -52,6 +52,9 @@ const HomePageButton = styled.div`
   justify-content: center;
   border-radius: 24px;
   cursor: pointer;
+`;
+
+const HomePageButton = styled(HomeButtons)`
   background-color: rgb(17, 17, 17);
 
   a {
@@ -61,19 +64,16 @@ const HomePageButton = styled.div`
   }
 `;
 
-const FollowingButton = styled.div`
-  display: flex;
-  align-items: center;
-  height: 48px;
-  min-width: 123px;
-  justify-content: center;
-  border-radius: 24px;
-  cursor: pointer;
+const FollowingButton = styled(HomeButtons)`
   background-color: white;
 
   a {
     text-decoration: none;
     color: black;
     font-weight: 700;
+  }
+
+  :hover {
+    background-color: #e1e1e1;
   }
 `;
