@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Mainboard from "./components/Mainboard";
@@ -12,6 +12,16 @@ function App() {
       params: { query: term },
     });
   };
+
+  const getNewPins = () => {
+    let promises = [];
+    let pinData = [];
+    let pins = ["dogs", "cars", "tokyo", "doodles"]
+  }
+
+  useEffect(() => {
+    getNewPins(),
+  }, [])
 
   const onSearchSubmit = (term) => {
     getImages(term).then((res) => {
