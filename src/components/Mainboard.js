@@ -7,7 +7,7 @@ function MainBoard(props) {
   let { pins } = props;
   return (
     <Wrapper>
-      <Container>
+      <Container className="mainboard_container">
         {pins.map((pin, index) => {
           let { urls } = pin;
           return <Pin key={index} urls={urls} />;
@@ -30,9 +30,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   background-color: white;
-  column-count: 5;
   column-gap: 5px;
   margin: 0 auto;
   height: 100%;
-  max-width: 1260px;
 `;
