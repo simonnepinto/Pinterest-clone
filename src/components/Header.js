@@ -4,6 +4,8 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import TextsmsIcon from "@mui/icons-material/Textsms";
+import FaceIcon from "@mui/icons-material/Face";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styled from "styled-components";
 
 function Header() {
@@ -38,8 +40,12 @@ function Header() {
         <IconButton>
           <TextsmsIcon />
         </IconButton>
-        <IconButton></IconButton>
-        <IconButton></IconButton>
+        <IconButton>
+          <FaceIcon />
+        </IconButton>
+        <IconButton>
+          <KeyboardArrowDownIcon />
+        </IconButton>
       </IconsWrapper>
     </Wrapper>
   );
