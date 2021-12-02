@@ -16,7 +16,7 @@ function App() {
   const getNewPins = () => {
     let promises = [];
     let pinData = [];
-    let pins = ["dogs", "cars", "tokyo", "doodles", "cats"];
+    let pins = ["dogs", "cars", "tokyo", "beaches", "cats", "sunset"];
 
     pins.forEach((pinTerm) => {
       promises.push(
