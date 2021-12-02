@@ -11,12 +11,14 @@ function Header() {
           <PinterestIcon />
         </IconButton>
       </LogoWrapper>
-      {/* <HomePageButton></HomePageButton>
+      <HomePageButton>
+        <a href="/">Homepage</a>
+      </HomePageButton>
       <FollowingButton></FollowingButton>
       <SearchWrapper>
         <SearchBarWrapper></SearchBarWrapper>
       </SearchWrapper>
-      <IconsWrapper></IconsWrapper> */}
+      <IconsWrapper></IconsWrapper>
     </Wrapper>
   );
 }
