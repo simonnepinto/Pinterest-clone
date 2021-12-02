@@ -3,6 +3,7 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import TextsmsIcon from "@mui/icons-material/Textsms";
 import styled from "styled-components";
 
 function Header() {
@@ -34,7 +35,9 @@ function Header() {
         <IconButton>
           <NotificationsIcon />
         </IconButton>
-        <IconButton></IconButton>
+        <IconButton>
+          <TextsmsIcon />
+        </IconButton>
         <IconButton></IconButton>
         <IconButton></IconButton>
       </IconsWrapper>
