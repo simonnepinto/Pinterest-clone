@@ -16,27 +16,27 @@ function App() {
   const getNewPins = () => {
     let promises = [];
     let pinData = [];
-    let pins = ["dogs", "cars", "tokyo", "doodles"]
+    let pins = ["dogs", "cars", "tokyo", "doodles", "cats"];
 
     pins.forEach((pinTerm) => {
       promises.push(
         getImages(pinTerm).then((res) => {
           let results = res.data.results;
           pinData = pinData.concat(results);
-          pinData.sort(function(a,b) {
+          pinData.sort(function (a, b) {
             return 0.5 - Math.random();
-          })
+          });
         })
-      )
-    })
+      );
+    });
     Promise.all(promises).then(() => {
-      setNewPins(pinData)
-    })
-  }
+      setNewPins(pinData);
+    });
+  };
 
   useEffect(() => {
-    getNewPins(),
-  }, [])
+    getNewPins();
+  }, []);
 
   const onSearchSubmit = (term) => {
     getImages(term).then((res) => {
