@@ -7,9 +7,9 @@ function MainBoard(props) {
   return (
     <Wrapper>
       <Container>
-        {pins.map((pin) => {
+        {pins.map((pin, index) => {
           let { urls } = pin;
-          <Pin urls={urls} />;
+          return <Pin key={index} urls={urls} />;
         })}
       </Container>
     </Wrapper>
