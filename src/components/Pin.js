@@ -6,7 +6,7 @@ function Pin(props) {
   return (
     <Wrapper>
       <Container>
-        <img alt="" src={urls.regular} />
+        <img alt="pin" src={urls?.regular} />
       </Container>
     </Wrapper>
   );
