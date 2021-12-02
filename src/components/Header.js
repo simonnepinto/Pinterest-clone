@@ -2,6 +2,7 @@ import React from "react";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
+import NotificationsIcon from "@mui/icons-material/Notifications";
 import styled from "styled-components";
 
 function Header() {
@@ -29,7 +30,14 @@ function Header() {
           </form>
         </SearchBarWrapper>
       </SearchWrapper>
-      {/* <IconsWrapper></IconsWrapper> */}
+      <IconsWrapper>
+        <IconButton>
+          <NotificationsIcon />
+        </IconButton>
+        <IconButton></IconButton>
+        <IconButton></IconButton>
+        <IconButton></IconButton>
+      </IconsWrapper>
     </Wrapper>
   );
 }
