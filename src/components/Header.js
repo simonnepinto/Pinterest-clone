@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
@@ -10,6 +10,11 @@ import styled from "styled-components";
 
 function Header() {
   const [input, setInput] = useState("");
+
+  const onSearchSubmit = (e) => {
+    e.preventDefault();
+    console.log("This is the input: ", input);
+  };
 
   return (
     <Wrapper>
@@ -35,7 +40,7 @@ function Header() {
               type="text"
               onChange={(e) => setInput(e.target.value)}
             />
-            <button type="submit" onClick=""></button>
+            <button type="submit" onClick={onSearchSubmit}></button>
           </form>
         </SearchBarWrapper>
       </SearchWrapper>
