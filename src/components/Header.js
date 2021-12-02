@@ -9,6 +9,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styled from "styled-components";
 
 function Header() {
+  const [input, setInput] = useState("");
+
   return (
     <Wrapper>
       <LogoWrapper>
@@ -28,7 +30,11 @@ function Header() {
             <SearchIcon />
           </IconButton>
           <form>
-            <input type="text" />
+            <input
+              placeholder="Search"
+              type="text"
+              onChange={(e) => setInput(e.target.value)}
+            />
             <button type="submit"></button>
           </form>
         </SearchBarWrapper>
