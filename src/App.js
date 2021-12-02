@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header onSubmit={onSearchSubmit} />
       <Mainboard />
     </div>
   );
