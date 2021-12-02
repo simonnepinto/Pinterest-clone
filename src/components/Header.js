@@ -60,3 +60,20 @@ const HomePageButton = styled.div`
     font-weight: 700;
   }
 `;
+
+const FollowingButton = styled.div`
+  display: flex;
+  align-items: center;
+  height: 48px;
+  min-width: 123px;
+  justify-content: center;
+  border-radius: 24px;
+  cursor: pointer;
+  background-color: white;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
+`;
