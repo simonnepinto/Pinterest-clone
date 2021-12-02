@@ -14,9 +14,9 @@ function Header() {
       <HomePageButton>
         <a href="/">Homepage</a>
       </HomePageButton>
-      {/* <FollowingButton>
+      <FollowingButton>
         <a href="/">Following</a>
-      </FollowingButton> */}
+      </FollowingButton>
       {/* <SearchWrapper>
         <SearchBarWrapper></SearchBarWrapper>
       </SearchWrapper>
