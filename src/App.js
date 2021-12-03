@@ -47,7 +47,7 @@ function App() {
 
   useEffect(() => {
     getNewPins();
-  }, []);
+  });
 
   const onSearchSubmit = (term) => {
     getImages(term).then((res) => {
