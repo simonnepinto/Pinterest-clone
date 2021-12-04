@@ -20,13 +20,15 @@ function App() {
       "dogs",
       "cars",
       "tokyo",
+      "japan",
       "beaches",
       "cats",
       "sunset",
       "illustrations",
       "coffee",
       "vector",
-      "food",
+      "desserts",
+      "christmas decor",
     ];
 
     pins.forEach((pinTerm) => {
