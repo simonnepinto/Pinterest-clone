@@ -26,7 +26,6 @@ function App() {
       "sunset",
       "illustrations",
       "coffee",
-      "vector",
       "desserts",
       "christmas decor",
     ];
