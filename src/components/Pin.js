@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Pin(props) {
   let { urls } = props;
   return (
     <Wrapper>
       <Container>
-        {/* <LazyLoadImage alt="pin" src={urls?.regular}></LazyLoadImage> */}
-        <img alt="pin" src={urls?.regular} />
+        <LazyLoadImage alt="pin" src={urls?.regular}></LazyLoadImage>
+        {/* <img alt="pin" src={urls?.regular} /> */}
       </Container>
     </Wrapper>
   );
